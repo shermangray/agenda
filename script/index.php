@@ -12,7 +12,7 @@ if (empty($_GET['nome'])) {
     $arr = array("%" . $_GET['nome'] . "%");
     $ps->execute($arr);
 }
-$contatos=$ps->fetchALL();
+$contatos=$ps->fetchALL(PDO::FETCH_ASSOC);
 $smarty->assign('contatos',$contatos);
 $smarty->display('index.tpl');
 ?>
