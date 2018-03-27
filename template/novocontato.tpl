@@ -1,18 +1,29 @@
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-	  xmlns="http://www.w3.org/1999/html">
-<head>
-	<script language="JavaScript" type="text/javascript" src="../js/jquery.js"></script>
-</head>
+      xmlns="http://www.w3.org/1999/html">
+    <head>
+        <script language="JavaScript" type="text/javascript" src="../js/jquery.js"></script>
+    </head>
+    <style>
+    {literal}
+        .moldura{
+            display: inline-block;
+        }
+    {/literal}
+    </style>
 <html>
-	<body style="background:#dbd3ce">
-		<input style="z-index: 10000; position: fixed; background-color:#979797 ; right: 14.5em;" type="button" value="Salvar" onClick="window.location='index.php'">
-		<form id="form_agenda" action="novo_contato.php" method="get">
-			nome: <input type="text" placeholder="nome" name="nome" required/>
-			email: <input type="text" placeholder="email" name="email"/>
-			celular: <input type="number" placeholder="numero" name="numero" required/>
-			nascimento: <input type="number" placeholder="data" name="data"/>
-			filho: <input type="number" placeholder="qntd" name="qntd"/>
-			<input type="submit" class="botao" value="Envial"/>
-		</form>
-	</body>
+    <body style="background:#dbd3ce">
+        <div class="moldura">
+            <fieldset><legend>Novo Contato</legend>
+                <form id="form_agenda" action="armazenacontato.php" method="post"><br/><br/>
+                    Nome: <input type="text" placeholder="Nome" name="nome" required/><br/><br/>
+                    Email: <input type="text" placeholder="Email" name="email"/><br/><br/>
+                    Celular: <input type="text" placeholder="Celular" name="celular" required/><br/><br/>
+                    Nascimento: <input type="text" placeholder="Data de Nascimento" name="nascimento"/><br/><br/>
+                    Filho: <input type="number" placeholder="Número de Filhos" name="filho" min='0'/><br/><br/>
+                    <a href="index.php" class="botao" value="voltar">Voltar</a>
+                    <input type="submit" style="background-color:#979797;" value="Salvar" onClick="window.location='index.php'">
+                </form>
+        </fieldset>
+        </div>
+    </body>
 </html>
