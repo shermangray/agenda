@@ -1,6 +1,6 @@
 <?php
-include('../libs/MyLogPHP/MyLogPHP.class.php');
-$conexao = new PDO('mysql:host=127.0.0.1;port=3306;dbname=agenda','root',null);
+include('../include/common.php');
+include('../include/conexao.php');
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $celular = $_POST['celular'];

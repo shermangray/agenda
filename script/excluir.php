@@ -1,5 +1,6 @@
 <?php 
-$conexao = new PDO('mysql:host=127.0.0.1;port=3306;dbname=agenda','root',null);
+include('../include/common.php');
+include('../include/conexao.php');
 $param = array($_GET['id']);
 $ps=$conexao->prepare("delete from contatos where id=?");
 $ps->execute($param);
