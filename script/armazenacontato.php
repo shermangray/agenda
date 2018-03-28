@@ -1,4 +1,5 @@
 <?php
+include('../libs/MyLogPHP/MyLogPHP.class.php');
 $conexao = new PDO('mysql:host=127.0.0.1;port=3306;dbname=agenda','root',null);
 $nome = $_POST['nome'];
 $email = $_POST['email'];

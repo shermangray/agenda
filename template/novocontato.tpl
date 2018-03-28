@@ -18,7 +18,7 @@
                     Nome: <input type="text" placeholder="Nome" name="nome" required/><br/><br/>
                     Email: <input type="text" placeholder="Email" name="email"/><br/><br/>
                     Celular: <input type="text" placeholder="Celular" name="celular" required/><br/><br/>
-                    Nascimento: <input type="text" placeholder="Data de Nascimento" name="nascimento"/><br/><br/>
+                    Nascimento: <input type="date" placeholder="Data de Nascimento" name="nascimento"/><br/><br/>
                     Filho: <input type="number" placeholder="Número de Filhos" name="filho" min='0'/><br/><br/>
                     <a href="index.php" class="botao" value="voltar">Voltar</a>
                     <input type="submit" style="background-color:#979797;" value="Salvar" onClick="window.location='index.php'">
