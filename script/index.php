@@ -1,9 +1,10 @@
 <?php
+include('../include/common.php');
 include('../libs/smarty/Smarty.class.php');
 $smarty = new Smarty;
 $smarty->template_dir = '../template';
 $smarty->compile_dir = '../template_c';
-$conexao = new PDO('mysql:host=127.0.0.1;port=3306;dbname=agenda','root',null);
+include('../include/conexao.php');
 if (empty($_GET['nome'])) {
     $ps=$conexao->prepare("select * from contatos");
     $ps->execute();
