@@ -9,7 +9,7 @@ if (empty($_GET['nome'])) {
     $ps=$conexao->prepare("select * from contatos order by nome");
     $ps->execute();
 } else {
-    $ps=$conexao->prepare("select * from contatos where nome like ?");
+    $ps=$conexao->prepare("select * from contatos where nome like ? order by nome");
     $arr = array("%" . $_GET['nome'] . "%");
     $ps->execute($arr);
 }
