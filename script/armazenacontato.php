@@ -9,4 +9,4 @@ $filho = $_POST['filho'];
 $ps=$conexao->prepare("insert into contatos(nome, email, celular, nascimento, filho) value(?, ?, ?, ?, ?)");
 $ps->execute(array($nome, $email, $celular, $nascimento, $filho));
 header("Location: index.php"); 
- ?>
+?>

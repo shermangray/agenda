@@ -1,7 +1,7 @@
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html">
+<html>
     <head>
         <script language="JavaScript" type="text/javascript" src="../js/jquery.js"></script>
+        <meta charset="utf-8"/>
     </head>
     <style>
     {literal}

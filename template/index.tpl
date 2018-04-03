@@ -1,7 +1,7 @@
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html">
+<html>
     <head>
         <script language="JavaScript" type="text/javascript" src="../js/jquery.js"></script>
+        <meta charset="utf-8"/>
     </head>
 <html>
     <body style="background:#dbd3ce">
@@ -12,7 +12,7 @@
         <form id="form_agenda" action="index.php" method="get">
             <h1>AGENDA ELETRÔNICA</h1>
             <tr>
-                <td><a href="nome_contato.php?id_contato={$contato.id_contato}">{$contato.nome|utf8_encode}</a></td>
+                <td><a href="nome_contato.php?id_contato={$contato.id_contato}">{$contato.nome}</a></td>
             </tr>
             <a href="novocontato.php"><h4>Novo contato</h4></a></br>
             Pesquisar contato: <input type="text" name="nome">
@@ -25,7 +25,7 @@
             </tr>
             {foreach from=$contatos item=contato}
                 <tr>
-                    <td><a href="editar.php?id_pessoa={$contato.id}">{$contato.nome|utf8_encode}</a></td><td>{$contato.email|utf8_encode}</td><td>{$contato.celular}</td><td>{$contato.nascimento}</td><td>{$contato.filho}</td><td><a href="excluir.php?id={$contato.id}">Excluir</a></td>
+                    <td><a href="editar.php?id_pessoa={$contato.id}">{$contato.nome}</a></td><td>{$contato.email}</td><td>{$contato.celular}</td><td>{$contato.nascimento}</td><td>{$contato.filho}</td><td><a href="excluir.php?id={$contato.id}">Excluir</a></td>
                 </tr>
             {/foreach}
         </table>

@@ -10,4 +10,4 @@ $filho = $_POST['filho'];
 $ps=$conexao->prepare("update contatos set nome = ?, email = ?, celular = ?, nascimento = ?, filho = ? where id = ?");
 $ps->execute(array($nome, $email, $celular, $nascimento, $filho, $id));
 header("Location: index.php"); 
- ?>
+?>
