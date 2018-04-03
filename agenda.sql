@@ -24,13 +24,13 @@ DROP TABLE IF EXISTS `contatos`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `contatos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) NOT NULL,
-  `email` varchar(30) DEFAULT NULL,
-  `celular` varchar(20) DEFAULT NULL,
+  `nome` varchar(45) CHARACTER SET latin1 NOT NULL,
+  `email` varchar(30) CHARACTER SET latin1 DEFAULT NULL,
+  `celular` varchar(20) CHARACTER SET latin1 DEFAULT NULL,
   `nascimento` date DEFAULT NULL,
   `filho` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -42,4 +42,4 @@ CREATE TABLE `contatos` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-28 13:44:43
+-- Dump completed on 2018-04-03 15:21:48
