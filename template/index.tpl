@@ -19,7 +19,7 @@
             <input type="submit" value="Enviar"></br></br>
             Lista de contatos:
         </form>
-        <table bgcolor="#deb887" border="10" >
+        <table bgcolor="#deb887" border="10">
             <tr>
                 <td><h3>Nome</h3></td><td><h3>Email</h3></td><td><h3>Celular</h3></td><td><h3>Nascimento</h3></td><td><h3>Filho</h3></td><td><h3>Ação</h3></td>
             </tr>
