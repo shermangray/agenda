@@ -19,7 +19,7 @@
                     Nome: <input type="text" placeholder="Nome" name="nome" value="{$nome}" required/><br/><br/>
                     Email: <input type="text" placeholder="Email" name="email" value="{$email}"/><br/><br/>
                     Celular: <input type="text" placeholder="Celular" name="celular" value="{$celular}"required/><br/><br/>
-                    Nascimento: <input type="text" placeholder="Data de Nascimento" name="nascimento" value="{$nascimento}"/><br/><br/>
+                    Nascimento: <input type="date" placeholder="Data de Nascimento" name="nascimento" value="{$nascimento}"/><br/><br/>
                     Filho: <input type="number" placeholder="Número de Filhos" name="filho" min='0' value="{$filho}"/><br/><br/>
                     <a href="index.php" class="botao" value="voltar">Voltar</a>
                     <input type="submit" style="background-color:#979797;" value="Salvar">

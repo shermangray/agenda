@@ -21,7 +21,7 @@
                     Nascimento: <input type="date" placeholder="Data de Nascimento" name="nascimento"/><br/><br/>
                     Filho: <input type="number" placeholder="Número de Filhos" name="filho" min='0'/><br/><br/>
                     <a href="index.php" class="botao" value="voltar">Voltar</a>
-                    <input type="submit" style="background-color:#979797;" value="Salvar" onClick="window.location='index.php'">
+                    <input type="submit" style="background-color:#979797;" value="Salvar">
                 </form>
         </fieldset>
         </div>
