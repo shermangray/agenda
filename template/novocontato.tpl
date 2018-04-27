@@ -14,8 +14,9 @@
     <body style="background:#dbd3ce">
         <div class="moldura">
             <fieldset><legend>Novo Contato</legend>
-                <form id="form_agenda" action="armazenacontato.php" method="post"><br/><br/>
+                <form id="form_agenda" action="armazenacontato.php" method="post" enctype="multipart/form-data"><br/><br/>
                     Nome: <input type="text" placeholder="Nome" name="nome" required/><br/><br/>
+                    Foto: <input name="imagem" type="file"><br/><br/>
                     Email: <input type="text" placeholder="Email" name="email"/><br/><br/>
                     Celular: <input type="text" placeholder="Celular" name="celular" required/><br/><br/>
                     Nascimento: <input type="date" placeholder="Data de Nascimento" name="nascimento"/><br/><br/>

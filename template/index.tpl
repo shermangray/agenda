@@ -21,13 +21,22 @@
         </form>
         <table bgcolor="#deb887" border="10">
             <tr>
-                <td><h3>Nome</h3></td><td><h3>Email</h3></td><td><h3>Celular</h3></td><td><h3>Nascimento</h3></td><td><h3>Filho</h3></td><td><h3>Ação</h3></td>
+                <td><h3>Foto</h3></td><td><h3>Nome</h3></td><td><h3>Email</h3></td><td><h3>Celular</h3></td><td><h3>Nascimento</h3></td><td><h3>Filho</h3></td><td><h3>Ação</h3></td>
             </tr>
             {foreach from=$contatos item=contato}
                 <tr>
-                    <td><a href="editar.php?id_pessoa={$contato.id}">{$contato.nome}</a></td><td>{$contato.email}</td><td>{$contato.celular}</td><td>{$contato.nascimento}</td><td>{$contato.filho}</td><td><a href="excluir.php?id={$contato.id}">Excluir</a></td>
+                    <td>
+                        <img src= "../imagens/{$contato.id}" width="100px" height="100px"/>
+                    </td>
+                    <td><a href="editar.php?id_pessoa={$contato.id}">{$contato.nome}</a></td>
+                    <td>{$contato.email}</td>
+                    <td>{$contato.celular}</td>
+                    <td>{$contato.nascimento}</td>
+                    <td>{$contato.filho}</td>
+                    <td><a href="excluir.php?id={$contato.id}">Excluir</a></td>
                 </tr>
             {/foreach}
+            
         </table>
         <a href="index.php" class="botao" value="voltar"><h3>Voltar</h3></a>
     </body>

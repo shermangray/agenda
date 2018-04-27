@@ -14,8 +14,10 @@
     <body style="background:#dbd3ce">
         <div class="moldura">
             <fieldset><legend>Editar Pessoa</legend>
-                <form id="form_agenda" action="atualizacontato.php" method="post">
+                <form id="form_agenda" action="atualizacontato.php" method="post" enctype="multipart/form-data">
                     <input type="hidden" placeholder="id" name="id" value="{$id}" required/><br/><br/>
+                    <img src= "../imagens/{$id}" width="100px" height="100px"/><br/><br/><br/>
+                    Foto: <input name="arquivo" type="file"/><br/><br/><br/>
                     Nome: <input type="text" placeholder="Nome" name="nome" value="{$nome}" required/><br/><br/>
                     Email: <input type="text" placeholder="Email" name="email" value="{$email}"/><br/><br/>
                     Celular: <input type="text" placeholder="Celular" name="celular" value="{$celular}"required/><br/><br/>
