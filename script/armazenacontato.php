@@ -11,7 +11,7 @@ $ps->execute(array($nome, $email, $celular, $nascimento, $filho));
 if(!empty($_FILES['imagem']['name'])){
     MyLogPHP\MyLogPHP::out($_FILES,'FILES');
     $info = new SplFileInfo($_FILES['imagem']['name']);
-    move_uploaded_file($_FILES['imagem']['tmp_name'], '/wamp64/www/agenda/imagens/' . $conexao->lastInsertId() . '.' . $info->getExtension());
+    move_uploaded_file($_FILES['imagem']['tmp_name'], '/wamp64/www/agenda/imagens/' . $conexao->lastInsertId());
 }
 header("Location: index.php");
 ?>
