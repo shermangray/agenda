@@ -14,6 +14,15 @@ if (empty($_GET['nome'])) {
     $ps->execute($arr);
 }
 $contatos=$ps->fetchALL(PDO::FETCH_ASSOC);
+$fim = count($contatos);
+for ($a = 0; $a < $fim; $a++) {
+    if ( file_exists("../imagens/" . $contatos[$a]['id'])){
+        $foto = true;
+    }else{
+        $foto = false;
+    }
+    $contatos[$a]['foto'] = $foto;
+}
 $smarty->assign('contatos',$contatos);
 $smarty->display('index.tpl');
 ?>

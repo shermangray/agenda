@@ -26,7 +26,9 @@
             {foreach from=$contatos item=contato}
                 <tr>
                     <td>
-                        <img src= "../imagens/{$contato.id}" width="100px" height="100px"/>
+                        {if $contato.foto}
+                            <img src= "../imagens/{$contato.id}" width="40px" height="50px"/>
+                        {/if}
                     </td>
                     <td><a href="editar.php?id_pessoa={$contato.id}">{$contato.nome}</a></td>
                     <td>{$contato.email}</td>
@@ -36,7 +38,6 @@
                     <td><a href="excluir.php?id={$contato.id}">Excluir</a></td>
                 </tr>
             {/foreach}
-            
         </table>
         <a href="index.php" class="botao" value="voltar"><h3>Voltar</h3></a>
     </body>
