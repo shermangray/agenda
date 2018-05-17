@@ -10,7 +10,15 @@ $ps=$conexao->prepare("select * from contatos where id = ?");
 $arr = array($idpessoa);
 $ps->execute($arr);
 $contato = $ps->fetch(PDO::FETCH_ASSOC);
-\MyLogPHP\MyLogPHP::out($contato, '$contato');
+    if ( file_exists( "../imagens/" . $contato['id'])){
+        $foto = true;
+    }else{
+        $foto = false;
+    }
+    $contato['foto'] = $foto;
+/*MyLogPHP\MyLogPHP::out($contato,'contatos');*/
+
+$smarty->assign('foto',$contato['foto']);
 $smarty->assign('id',$contato['id']);
 $smarty->assign('nome',$contato['nome']);
 $smarty->assign('email',$contato['email']);

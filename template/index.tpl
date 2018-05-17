@@ -27,7 +27,7 @@
                 <tr>
                     <td>
                         {if $contato.foto}
-                            <img src= "../imagens/{$contato.id}" width="40px" height="50px"/>
+                            <img src= "../imagens/{$contato.id}" width="30px" height="50px"/>
                         {/if}
                     </td>
                     <td><a href="editar.php?id_pessoa={$contato.id}">{$contato.nome}</a></td>
