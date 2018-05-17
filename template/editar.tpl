@@ -16,7 +16,6 @@
             <fieldset><legend>Editar Pessoa</legend>
                 <form id="form_agenda" action="atualizacontato.php" method="post" enctype="multipart/form-data">
                     <input type="hidden" placeholder="id" name="id" value="{$id}" required/><br/><br/>
-                    
                     {if $foto}
                             <img src= "../imagens/{$id}" width="30px" height="50px"/><br/><br/><br/>
                     {/if}

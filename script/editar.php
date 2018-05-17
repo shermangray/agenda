@@ -16,14 +16,6 @@ $contato = $ps->fetch(PDO::FETCH_ASSOC);
         $foto = false;
     }
     $contato['foto'] = $foto;
-/*MyLogPHP\MyLogPHP::out($contato,'contatos');*/
-
-$smarty->assign('foto',$contato['foto']);
-$smarty->assign('id',$contato['id']);
-$smarty->assign('nome',$contato['nome']);
-$smarty->assign('email',$contato['email']);
-$smarty->assign('celular',$contato['celular']);
-$smarty->assign('nascimento',$contato['nascimento']);
-$smarty->assign('filho',$contato['filho']);
+$smarty->assign($contato);
 $smarty->display('editar.tpl');
 ?>
